@@ -1,0 +1,7 @@
+<h1>All Smoothies</h1>
+
+<% @smoothies.each do |smoothie|%>
+    <%= link_to(smoothie.name, smoothy_path(smoothie))%>
+<%end%>
+
+<%= link_to("Create Smoothie", new_smoothy_path)%>

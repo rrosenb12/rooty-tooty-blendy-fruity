@@ -1,0 +1,10 @@
+<h1><%= @smoothie.name%></h1>
+
+<h3>Ingredients:</h3>
+<ul>
+    <% @smoothie.ingredients.each do |ingredient|%>
+        <li><%= ingredient.name %></li>
+    <%end%>
+</ul>
+
+<%= link_to(@smoothie.name, edit_smoothy_path(@smoothie.id))%>
